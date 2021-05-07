@@ -48,10 +48,8 @@ def panoramic_resection(point_file, output_file, camera_file, num_iter=10, itera
     #Read coordinates file and store values
     with open(camera_file,'r') as cam:
         cam=cam.readlines()
-        x_size=cam[0].split()[0]
-        y_size=cam[0].split()[1]
-    x_size=17054
-    y_size=8527
+        x_size=int(cam[0].split()[0])
+        y_size=int(cam[0].split()[1])
     x_img=[]
     y_img=[]
     x_ter=[]
