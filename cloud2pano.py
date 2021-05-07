@@ -122,7 +122,7 @@ def cloud2pano(ply_file, EOP, cam, output_image, background_image=False, color=F
         i+=1
     cv2.imwrite(output_image,image)
 
-
+#The EOP can be obtained using panoramic_resection.py
 EOP = [58.35850000148184, 5.254394235317385, 0.6713243125150195, -0.002883227519013609, -0.0071506130407059405, 2.998822426375224]
 ply_file = "cloud_simple.ply"
 cam = 'camera.txt'
